@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer - AI Stock Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        'dark-bg': '#181818'
+                    }
+                }
+            },
+            darkMode: 'class'
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white dark:bg-dark-bg text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <div class="min-h-screen">
+        <!-- Header -->
+        <header class="bg-gradient-to-r from-red-600 to-red-700 text-white py-8">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="flex items-center mb-4">
+                    <svg class="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                    </svg>
+                    <h1 class="text-3xl md:text-4xl font-bold">Important Disclaimer</h1>
+                </div>
+                <p class="text-lg opacity-90">AI Stock Analysis Platform</p>
+                <p class="text-sm opacity-75 mt-2">Last updated: January 2024</p>
+            </div>
+        </header>
+
+        <!-- Critical Warning Banner -->
+        <div class="bg-red-50 dark:bg-red-900/30 border-t-4 border-red-500 py-6">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0">
+                        <svg class="w-6 h-6 text-red-500 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h2 class="text-xl font-bold text-red-800 dark:text-red-300 mb-2">INVESTMENT RISK WARNING</h2>
+                        <p class="text-red-700 dark:text-red-300 font-medium">
+                            All investments involve substantial risk of loss. The AI analysis provided on this platform is for informational purposes only and does not constitute professional financial advice. Past performance does not guarantee future results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="max-w-4xl mx-auto px-6 py-12">
+            <div class="prose prose-lg max-w-none dark:prose-invert">
+                
+                <!-- General Disclaimer -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary dark:text-blue-400">1. General Disclaimer</h2>
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                            The information provided through our AI Stock Analysis platform ("Service") is for educational and informational purposes only. This Service does not provide investment advice, financial planning services, or any form of professional financial guidance.
+                        </p>
+                        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                            <strong>You should not rely solely on this information to make investment decisions.</strong> Always consult with a qualified financial advisor, broker, or investment professional before making any investment decisions.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Investment Risk Warnings -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary dark:text-blue-400">2. Investment Risk Warnings</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 p-6 rounded-lg">
+                            <h3 class="text-lg font-semibold text-red-800 dark:text-red-300 mb-3">Market Risks</h3>
+                            <ul class="text-red-700 dark:text-red-300 space-y-2 text-sm">
+                                <li>• Stock prices can fluctuate dramatically</li>
+                                <li>• Market volatility can result in significant losses</li>
+                                <li>• Economic conditions affect all investments</li>
+                                <li>• Currency exchange rates may impact returns</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 p-6 rounded-lg">
+                            <h3 class="text-lg font-semibold text-orange-800 dark:text-orange-300 mb-3">Investment Risks</h3>
+                            <ul class="text-orange-700 dark:text-orange-300 space-y-2 text-sm">
+                                <li>• You may lose some or all of your investment</li>
+                                <li>• Past performance does not predict future results</li>
+                                <li>• Diversification does not guarantee profits</li>
+                                <li>• Liquidity risks may prevent timely selling</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-6 rounded">
+                        <h4 class="font-bold text-yellow-800 dark:text-yellow-300 mb-2">HIGH RISK INVESTMENT WARNING</h4>
+                        <p class="text-yellow-700 dark:text-yellow-300">
+                            Trading in stocks, options, futures, and other financial instruments involves substantial risk and is not suitable for all investors. You should carefully consider your financial situation, investment experience, and risk tolerance before engaging in any trading activity.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- AI Analysis Limitations -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary dark:text-blue-400">3. AI Analysis Limitations</h2>
+                    
+                    <h3 class="text-xl font-medium mb-3 text-gray-800 dark:text-gray-200">3.1 Algorithmic Limitations</h3>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
+                        <li>AI algorithms are based on historical data and mathematical models</li>
+                        <li>Models may not account for unprecedented market conditions</li>
+                        <li>Algorithm performance can vary under different market scenarios</li>
+                        <li>AI predictions are probabilistic, not certainties</li>
+                        <li>Machine learning models may have inherent biases or limitations</li>
+                    </ul>
+
+                    <h3 class="text-xl font-medium mb-3 text-gray-800 dark:text-gray-200">3.2 Data Dependencies</h3>
+                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
+                        <li>Analysis quality depends on the accuracy of input data</li>
+                        <li>Real-time data may have delays or inaccuracies</li>
+                        <li>Historical data may not reflect current market conditions</li>
+                        <li>Third-party data sources may contain errors or omissions</li>
+                    </ul>
+
+                    <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 p-6 rounded-lg">
+                        <h4 class="font-semibold text-blue-800 dark:text-blue-300 mb-2">Important Note on AI Predictions</h4>
+                        <p class="text-blue-700 dark:text-blue-300">
+                            Our AI analysis provides statistical insights based on historical patterns and current market data. However, financial markets are influenced by countless unpredictable factors including geopolitical events, natural disasters, policy changes, and human psychology that cannot be fully captured by any algorithmic model.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- No Investment Advice -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary dark:text-blue-400">4. Not Investment Advice</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-red-100 dark:bg-red-900/30 border-l-4 border-red-500 p-6">
+                            <h3 class="text-lg font-bold text-red-800 dark:text-red-300 mb-2">EXPLICIT DISCLAIMER</h3>
+                            <p class="text-red-700 dark:text-red-300 font-medium">
+                                Nothing on this platform constitutes investment advice, financial advice, trading advice, or any other sort of advice. The AI analysis, reports, and insights provided are for informational and educational purposes only.
+                            </p>
+                        </div>
+
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="text-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                                <div class="text-3xl mb-2">📊</div>
+                                <h4 class="font-medium mb-2">Analysis Tool</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Our platform is an analytical tool, not a financial advisor</p>
+                            </div>
+                            
+                            <div class="text-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                                <div class="text-3xl mb-2">🔍</div>
+                                <h4 class="font-medium mb-2">Research Aid</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Use our insights as part of your broader research process</p>
+                            </div>
+                            
+                            <div class="text-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                                <div class="text-3xl mb-2">👤</div>
+                                <h4 class="font-medium mb-2">Your Decision</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">All investment decisions remain solely your responsibility</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Data Accuracy -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary dark:text-blue-400">5. Data Accuracy and Timeliness</h2>
+                    
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg mb-6">
+                        <h3 class="text-lg font-medium mb-3 text-gray-800 dark:text-gray-200">Data Disclaimer</h3>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">
+                            While we strive to provide accurate and up-to-date information, we cannot guarantee the accuracy, completeness, or timeliness of any data or analysis presented on our platform.
+                        </p>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-3">
+                                <span class="text-red-500 font-bold">•</span>
+                                <span class="text-gray-600 dark:text-gray-400">Market data may be delayed by 15-20 minutes or more</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-red-500 font-bold">•</span>
+                                <span class="text-gray-600 dark:text-gray-400">Financial statements and company data may not reflect the most recent filings</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-red-500 font-bold">•</span>
+                                <span class="text-gray-600 dark:text-gray-400">Third-party data providers may have errors or omissions</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-red-500 font-bold">•</span>
+                                <span class="text-gray-600 dark:text-gray-400">Technical issues may affect data accuracy or availability</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 p-4 rounded">
+                        <p class="text-yellow-700 dark:text-yellow-300 text-sm">
+                            <strong>Verification Required:</strong> Always verify critical information through official sources such as company filings, official financial statements, and regulated financial data providers before making investment decisions.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Performance Disclaimers -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary dark:text-blue-400">6. Performance and Results Disclaimers</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="border border-gray-300 dark:border-gray-600 rounded-lg overflow-hidden">
+                            <div class="bg-gray-100 dark:bg-gray-700 px-4 py-3 border-b border-gray-300 dark:border-gray-600">
+                                <h3 class="font-semibold text-gray-800 dark:text-gray-200">Past Performance Warning</h3>
+                            </div>
+                            <div class="p-4">
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">
+                                    Past performance of any investment strategy, security, or market sector does not guarantee future results. Historical data and backtesting results are not indicative of future performance and should not be the sole basis for investment decisions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="border border-gray-300 dark:border-gray-600 rounded-lg overflow-hidden">
+                            <div class="bg-gray-100 dark:bg-gray-700 px-4 py-3 border-b border-gray-300 dark:border-gray-600">
+                                <h3 class="font-semibold text-gray-800 dark:text-gray-200">Hypothetical Results</h3>
+                            </div>
+                            <div class="p-4">
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">
+                                    Any hypothetical performance results shown have inherent limitations. These results do not represent actual trading and may not reflect the impact of material economic and market factors on decision-making if actual funds were at risk.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="border border-gray-300 dark:border-gray-600 rounded-lg overflow-hidden">
+                            <div class="bg-gray-100 dark:bg-gray-700 px-4 py-3 border-b border-gray-300 dark:border-gray-600">
+                                <h3 class="font-semibold text-gray-800 dark:text-gray-200">No Guarantee of Profits</h3>
+                            </div>
+                            <div class="p-4">
+                                <p class="text-gray-700 dark:text-gray-300 text-sm">
+                                    We make no representations or warranties that any user will or is likely to achieve profits or losses similar to those discussed on our platform. There is no guarantee that our analysis or insights will result in profitable investments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Regulatory Compliance -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary dark:text-blue-400">7. Regulatory and Legal Disclaimers</h2>
+                    
+                    <h3 class="text-xl font-medium mb-3 text-gray-800 dark:text-gray-200">7.1 Securities Regulations</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                        We are not a registered investment advisor, broker-dealer, or financial planner. We do not provide investment advice as defined by applicable securities laws and regulations. Our platform does not constitute an offer to sell or a solicitation to buy any securities.
+                    </p>
+
+                    <h3 class="text-xl font-medium mb-3 text-gray-800 dark:text-gray-200">7.2 Jurisdiction Limitations</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                        Our service may not be available in all jurisdictions. Users are responsible for ensuring compliance with their local laws and regulations regarding financial services and investment activities.
+                    </p>
+
+                    <div class="bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800 p-6 rounded-lg">
+                        <h4 class="font-semibold text-purple-800 dark:text-purple-300 mb-2">Compliance Notice</h4>
+                        <p class="text-purple-700 dark:text-purple-300 text-sm">
+                            This platform is designed to comply with applicable securities laws and regulations. However, users should consult with legal and financial professionals regarding their specific situation and applicable regulations in their jurisdiction.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Third-Party Content -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary dark:text-blue-400">8. Third-Party Content and Links</h2>
+                    
+                    <div class="space-y-4">
+                        <p class="text-gray-700 dark:text-gray-300">
+                            Our platform may contain links to third-party websites, data sources, or services. We do not endorse, control, or assume responsibility for the content, accuracy, or practices of these third parties.
+                        </p>
+                        
+                        <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded border-l-4 border-gray-400">
+                            <h4 class="font-medium mb-2">Third-Party Disclaimers</h4>
+                            <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                                <li>• External links are provided for convenience only</li>
+                                <li>• We do not verify the accuracy of third-party information</li>
+                                <li>• Third-party services have their own terms and privacy policies</li>
+                                <li>• Use of external services is at your own risk</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Technical Disclaimers -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary dark:text-blue-400">9. Technical and Service Disclaimers</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-red-50 dark:bg-red-900/20 p-6 rounded-lg">
+                            <h3 class="text-lg font-medium mb-3 text-red-800 dark:text-red-300">Service Availability</h3>
+                            <ul class="text-red-700 dark:text-red-300 space-y-2 text-sm">
+                                <li>• Platform may experience downtime or interruptions</li>
+                                <li>• Technical issues may affect data accuracy</li>
+                                <li>• Internet connectivity problems may occur</li>
+                                <li>• We do not guarantee uninterrupted service</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-orange-50 dark:bg-orange-900/20 p-6 rounded-lg">
+                            <h3 class="text-lg font-medium mb-3 text-orange-800 dark:text-orange-300">System Limitations</h3>
+                            <ul class="text-orange-700 dark:text-orange-300 space-y-2 text-sm">
+                                <li>• Processing delays may occur during high traffic</li>
+                                <li>• Mobile app functionality may vary by device</li>
+                                <li>• Browser compatibility issues possible</li>
+                                <li>• Data synchronization delays may happen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Limitation of Liability -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary dark:text-blue-400">10. Limitation of Liability</h2>
+                    
+                    <div class="bg-red-50 dark:bg-red-900/30 border-2 border-red-200 dark:border-red-800 p-6 rounded-lg">
+                        <h3 class="text-lg font-bold text-red-800 dark:text-red-300 mb-4">IMPORTANT LIABILITY LIMITATION</h3>
+                        
+                        <div class="space-y-4 text-red-700 dark:text-red-300">
+                            <p class="font-medium">
+                                TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THIS PLATFORM.
+                            </p>
+                            
+                            <div class="text-sm space-y-2">
+                                <p><strong>This includes but is not limited to:</strong></p>
+                                <ul class="list-disc list-inside space-y-1 ml-4">
+                                    <li>Investment losses or missed opportunities</li>
+                                    <li>Errors in data, analysis, or system functionality</li>
+                                    <li>Service interruptions or technical failures</li>
+                                    <li>Loss of profits, data, or business opportunities</li>
+                                    <li>Third-party actions or system breaches</li>
+                                </ul>
+                            </div>
+                            
+                            <p class="text-sm">
+                                Your use of this platform is at your own risk. You acknowledge that any investment decisions made based on information from this platform are made solely at your own discretion and risk.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Updates and Modifications -->
+                <section class="mb-12">
+                    <h2 class="text-2xl font-semibold mb-4 text-primary dark:text-blue-400">11. Disclaimer Updates</h2>
+                    
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                        We reserve the right to modify this disclaimer at any time without prior notice. Changes will be effective immediately upon posting on our platform. Your continued use of the service after any modifications constitutes acceptance of the updated disclaimer.
+                    </p>
+                    
+                    <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 p-4 rounded">
+                        <p class="text-blue-700 dark:text-blue-300 text-sm">
+                            <strong>Recommendation:</strong> We encourage you to review this disclaimer periodically to stay informed of any updates or changes that may affect your use of our platform.
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- Final Warning Footer -->
+        <div class="bg-red-600 text-white py-6">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h3 class="text-xl font-bold mb-2">⚠️ FINAL REMINDER ⚠️</h3>
+                <p class="text-lg font-medium">
+                    NEVER INVEST MORE THAN YOU CAN AFFORD TO LOSE
+                </p>
+                <p class="text-sm opacity-90 mt-2">
+                    Always conduct your own research and consult with qualified financial professionals before making investment decisions.
+                </p>
+            </div>
+        </="footer">
+
+        <!-- Footer -->
+        <footer class="bg-gray-100 dark:bg-gray-800 py-8">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                    This disclaimer is an integral part of our Terms of Service and applies to all users of the AI Stock Analysis platform.
+                </p>
+                <div class="pt-4 border-t border-gray-300 dark:border-gray-600">
+                    <p class="text-xs text-gray-500 dark:text-gray-500">
+                        © 2024 AI Stock Analysis Platform. All rights reserved. | Effective Date: January 2024
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Dark mode detection and toggle
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add warning animation on scroll
+        window.addEventListener('scroll', function() {
+            const warningBanner = document.querySelector('.bg-red-50.dark\\:bg-red-900\\/30');
+            if (warningBanner) {
+                const rect = warningBanner.getBoundingClientRect();
+                if (rect.top <= 0 && rect.bottom >= 0) {
+                    warningBanner.style.position = 'sticky';
+                    warningBanner.style.top = '0';
+                    warningBanner.style.zIndex = '40';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
