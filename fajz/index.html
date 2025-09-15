@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<script>
+  function K2() {
+            window.open('https://wa.me/11385456266', '_blank');
+        }
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RemoteworkWeb - Emplois Télétravail Sécurisés & Légitimes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#bf6D3A'
+                    }
+                }
+            }
+        }
+        
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .breathing-btn {
+            animation: breathing 2s ease-in-out infinite;
+        }
+        @keyframes breathing {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 4px 8px rgba(191, 109, 58, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(191, 109, 58, 0.5);
+            }
+        }
+        .modal-overlay {
+            backdrop-filter: blur(4px);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-white dark:bg-gray-900 smooth-scroll">
+    <!-- Header Navigation -->
+    <header class="bg-white dark:bg-gray-800 shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="img/title.Cdnq-EC8.webp" alt="RemoteworkWeb Logo" class="h-10">
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Accueil</a>
+                <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">À propos</a>
+                <a href="#jobs" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Postes Disponibles</a>
+                <a href="#how-it-works" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Comment ça marche</a>
+                <a href="#faq" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Questions Fréquentes</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-gray-700 dark:text-gray-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 border-t">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#home" class="block text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Accueil</a>
+                <a href="#about" class="block text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">À propos</a>
+                <a href="#jobs" class="block text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Postes Disponibles</a>
+                <a href="#how-it-works" class="block text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Comment ça marche</a>
+                <a href="#faq" class="block text-gray-700 dark:text-gray-300 hover:text-primary transition-colors">Questions Fréquentes</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+                        Travaillez de n'importe où avec des <span class="text-primary">emplois télétravail sécurisés et légitimes</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+                      Horaires flexibles. Rémunération à la tâche et journalière.
+                    </p>
+                    <button onclick="d2()" class="bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all hover-scale shadow-lg">
+                        Trouvez votre prochain emploi télétravail !
+                    </button>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="img/1.jpg" alt="Remote Work Illustration" class="w-full h-auto rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies Section -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Compétences Clés de RemoteworkWeb</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400">Votre source fiable pour les carrières chez RemoteworkWeb</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg border-2 border-primary border-opacity-20 hover-scale transform transition-all duration-300 hover:border-primary hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-orange-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Emplois Légitimes</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Des experts vérifient chaque offre d'emploi et s'assurent qu'il n'y a pas d'arnaques ou de spam - seulement des rôles télétravail de haute qualité</p>
+                </div>
+                <div class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg border-2 border-primary border-opacity-20 hover-scale transform transition-all duration-300 hover:border-primary hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-orange-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Opportunités Diverses</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Postes variés et diversifiés disponibles</p>
+                </div>
+                <div class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg border-2 border-primary border-opacity-20 hover-scale transform transition-all duration-300 hover:border-primary hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-orange-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Employeurs Vérifiés</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Aucun risque & aucune arnaque</p>
+                </div>
+                <div class="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg border-2 border-primary border-opacity-20 hover-scale transform transition-all duration-300 hover:border-primary hover:shadow-2xl">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-orange-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Revenus Transparents</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Clair et transparent, confiance pour un succès commun</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Start Section -->
+    <section id="how-it-works" class="py-20 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Comment commencer avec RemoteworkWeb ?</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400">Guide de recherche d'emploi</p>
+            </div>
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
+                    <img src="img/2.jpg" alt="How to Start" class="w-full h-auto rounded-lg shadow-2xl">
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-4">Emplois Télétravail & Flexibles de Haute Qualité</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Nous aidons les gens à trouver des emplois flexibles, télétravail et professionnels dans plus de 50 catégories de carrière, tant au niveau national qu'international, des postes d'entrée de gamme aux postes de direction et du temps partiel au temps plein.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-4">Chaque Emploi & Entreprise Recherché pour Vous</h3>
+                            <p class="text-gray-600 dark:text-gray-400">En plus de trouver et filtrer les meilleurs emplois télétravail et flexibles, notre équipe compétente travaille 24h/24 pour vous donner des informations sur chaque organisation afin que vous puissiez prendre une décision éclairée sur votre candidature.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-4">Support & Ressources de Haute Qualité</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Nous avons d'excellentes ressources pour vous aider à obtenir l'emploi télétravail ou flexible que vous souhaitez, y compris un service client avec qui vous pouvez parler.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-4">Garantie de Satisfaction Sans Risque</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Si vous avez des problèmes, faites-le nous savoir. Nous offrons un support tuteur 24/7.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Types Section -->
+    <section id="jobs" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Emplois Flexibles & Télétravail Disponibles</h2>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Part-Time Jobs -->
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border-2 border-primary border-opacity-20 hover-scale transform transition-all duration-300 hover:border-primary hover:shadow-2xl">
+                    <div class="text-center mb-6">
+                        <h3 class="text-3xl font-bold text-primary mb-4">Emplois Temps Partiel</h3>
+                        <div class="bg-gradient-to-r from-primary to-orange-400 text-white px-6 py-3 rounded-full text-xl font-bold inline-block shadow-lg">
+                            💰 150-200 USD/jour
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-6 text-center">Les revenus dépendent du nombre de tâches accomplies.</p>
+                    <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+                        <li class="flex items-start bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <span class="text-primary mr-3 font-bold text-lg">1.</span>
+                            <span>Les emplois temps partiel peuvent rapporter jusqu'à <strong class="text-primary bg-yellow-100 dark:bg-yellow-900 px-2 py-1 rounded">150-200 USD</strong> par jour.</span>
+                        </li>
+                        <li class="flex items-start bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <span class="text-primary mr-3 font-bold text-lg">2.</span>
+                            <span>Paiement après accomplissement des tâches chaque jour.</span>
+                        </li>
+                        <li class="flex items-start bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <span class="text-primary mr-3 font-bold text-lg">3.</span>
+                            <span>Travaillez 1 à 6 heures par jour.</span>
+                        </li>
+                        <li class="flex items-start bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <span class="text-primary mr-3 font-bold text-lg">4.</span>
+                            <span>Choisissez parmi diverses tâches comme service client en ligne, opérations e-commerce, saisie de données, achats en ligne et plus.</span>
+                        </li>
+                        <li class="flex items-start bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <span class="text-primary mr-3 font-bold text-lg">5.</span>
+                            <span>Accomplissez des tâches en ligne facilement depuis votre appareil mobile.</span>
+                        </li>
+                        <li class="flex items-start bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <span class="text-primary mr-3 font-bold text-lg">6.</span>
+                            <span>Facile à rejoindre -- Rapide à commencer !</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Full-Time Jobs -->
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border-2 border-primary border-opacity-20 hover-scale transform transition-all duration-300 hover:border-primary hover:shadow-2xl">
+                    <div class="text-center mb-6">
+                        <h3 class="text-3xl font-bold text-primary mb-4">Emplois Temps Plein</h3>
+                        <div class="bg-gradient-to-r from-primary to-orange-400 text-white px-6 py-3 rounded-full text-xl font-bold inline-block shadow-lg">
+                            💰 1000-1500 USD/semaine
+                        </div>
+                    </div>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 mb-6 text-center">Paiement mensuel ou hebdomadaire basé sur l'accomplissement des tâches.</p>
+                    <ul class="space-y-4 text-gray-700 dark:text-gray-300">
+                        <li class="flex items-start bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <span class="text-primary mr-3 font-bold text-lg">1.</span>
+                            <span>Les emplois temps plein peuvent rapporter jusqu'à <strong class="text-primary bg-yellow-100 dark:bg-yellow-900 px-2 py-1 rounded">1000-1500 USD</strong> par semaine.</span>
+                        </li>
+                        <li class="flex items-start bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <span class="text-primary mr-3 font-bold text-lg">2.</span>
+                            <span>Paiement après accomplissement des tâches chaque semaine ou chaque mois.</span>
+                        </li>
+                        <li class="flex items-start bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <span class="text-primary mr-3 font-bold text-lg">3.</span>
+                            <span>Travaillez 4 à 8 heures par jour.</span>
+                        </li>
+                        <li class="flex items-start bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <span class="text-primary mr-3 font-bold text-lg">4.</span>
+                            <span>Choisissez parmi diverses tâches comme service client en ligne, opérations e-commerce, saisie de données, achats en ligne et plus.</span>
+                        </li>
+                        <li class="flex items-start bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <span class="text-primary mr-3 font-bold text-lg">5.</span>
+                            <span>Accomplissez des tâches de travail en ligne avec votre appareil mobile.</span>
+                        </li>
+                        <li class="flex items-start bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
+                            <span class="text-primary mr-3 font-bold text-lg">6.</span>
+                            <span>Facile à rejoindre -- Rapide à commencer !</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <button onclick="d2()" class="bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all hover-scale shadow-lg">
+                    Explorer plus d'emplois
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Ce que disent nos membres</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="flex items-center mb-4">
+                        
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Skyler M.</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Spécialiste Marketing</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300">"RemoteworkWeb a changé ma vie ! Je peux maintenant travailler depuis chez moi et je gagne plus que dans mon précédent emploi de bureau. La flexibilité est incroyable."</p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="flex items-center mb-4">
+                         
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Mary K.</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Analyste de Données</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300">"En tant que mère célibataire, il était difficile de trouver un emploi qui s'adapte à mon horaire. RemoteworkWeb m'a trouvé le poste à temps partiel parfait !"</p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="flex items-center mb-4">
+                         
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Walt J.</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Développeur Logiciel</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300">"J'étais sceptique concernant les emplois télétravail, mais RemoteworkWeb m'a aidé à trouver un poste légitime. Le support est fantastique et le paiement est ponctuel."</p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="flex items-center mb-4">
+                       
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white">John D.</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Service Client</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300">"Après des années de chômage, RemoteworkWeb m'a donné une seconde chance. Je travaille maintenant à temps plein et je suis financièrement stable."</p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="flex items-center mb-4">
+                        
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Jerry T.</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Manager E-Commerce</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300">"La variété des emplois disponibles chez RemoteworkWeb est impressionnante. J'ai pu essayer plusieurs rôles et trouver celui qui me convient parfaitement."</p>
+                </div>
+				
+				 <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="flex items-center mb-4">
+                        
+                        <div>
+                            <h4 class="font-semibold text-gray-900 dark:text-white">Walt J.</h4>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm">Développeur Logiciel</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300">"Je peux maintenant travailler depuis chez moi et je gagne plus que dans mon précédent emploi de bureau. La flexibilité est incroyable."</p>
+                </div>
+				
+				
+            </div>
+            <div class="text-center mt-12">
+                <button onclick="d2()" class="bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all hover-scale shadow-lg">
+                    Trouvez votre prochain emploi télétravail
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Questions Fréquemment Posées</h2>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-4">
+                    <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md">
+                        <button class="faq-question w-full p-6 text-left focus:outline-none focus:ring-2 focus:ring-primary" onclick="toggleFaq(1)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-xl font-semibold text-primary">1. Combien d'argent puis-je gagner ?</h3>
+                                <svg class="w-6 h-6 text-primary transition-transform duration-200" id="faq-icon-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6" id="faq-answer-1">
+                            <p class="text-gray-700 dark:text-gray-300">Votre potentiel de gains est directement proportionnel au temps et à l'effort que vous investissez, que vous choisissiez une participation à temps partiel ou à temps plein. Gagnez jusqu'à 200-300 USD par jour.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md">
+                        <button class="faq-question w-full p-6 text-left focus:outline-none focus:ring-2 focus:ring-primary" onclick="toggleFaq(2)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-xl font-semibold text-primary">2. À quel point l'emploi est-il flexible ?</h3>
+                                <svg class="w-6 h-6 text-primary transition-transform duration-200" id="faq-icon-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6" id="faq-answer-2">
+                            <p class="text-gray-700 dark:text-gray-300">Très flexible ! Vous choisissez quand vous travaillez, combien vous travaillez et sur quels projets vous voulez travailler.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md">
+                        <button class="faq-question w-full p-6 text-left focus:outline-none focus:ring-2 focus:ring-primary" onclick="toggleFaq(3)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-xl font-semibold text-primary">3. Quelles compétences sont requises pour l'emploi ?</h3>
+                                <svg class="w-6 h-6 text-primary transition-transform duration-200" id="faq-icon-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6" id="faq-answer-3">
+                            <p class="text-gray-700 dark:text-gray-300">Bien qu'aucune expérience spécifique ne soit requise, nous recherchons des personnes avec d'excellentes compétences rédactionnelles et de pensée critique, une attention aux détails, de la créativité et de l'initiative.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md">
+                        <button class="faq-question w-full p-6 text-left focus:outline-none focus:ring-2 focus:ring-primary" onclick="toggleFaq(4)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-xl font-semibold text-primary">4. Est-ce conforme et légal ?</h3>
+                                <svg class="w-6 h-6 text-primary transition-transform duration-200" id="faq-icon-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6" id="faq-answer-4">
+                            <p class="text-gray-700 dark:text-gray-300">Toutes les opportunités d'emploi sont strictement vérifiées, et vous n'avez qu'à investir du temps et des efforts pour gagner facilement un revenu ! Nous ne demanderons aucun frais de service.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md">
+                        <button class="faq-question w-full p-6 text-left focus:outline-none focus:ring-2 focus:ring-primary" onclick="toggleFaq(5)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-xl font-semibold text-primary">5. Quels emplois sont disponibles ?</h3>
+                                <svg class="w-6 h-6 text-primary transition-transform duration-200" id="faq-icon-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6" id="faq-answer-5">
+                            <p class="text-gray-700 dark:text-gray-300">Nous proposons une variété de tâches d'emploi qui peuvent être accomplies avec n'importe quel appareil en ligne, vous permettant de travailler avec un horaire flexible tout en gagnant un salaire en ligne. Postulez aujourd'hui et l'un de nos recruteurs vous interviewera en ligne et vous guidera à travers les tâches avant de commencer.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md">
+                        <button class="faq-question w-full p-6 text-left focus:outline-none focus:ring-2 focus:ring-primary" onclick="toggleFaq(6)">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-xl font-semibold text-primary">6. Comment je reçois le paiement ?</h3>
+                                <svg class="w-6 h-6 text-primary transition-transform duration-200" id="faq-icon-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6" id="faq-answer-6">
+                            <p class="text-gray-700 dark:text-gray-300">Nous nous assurons que votre salaire arrive rapidement et en sécurité via votre méthode de paiement préférée.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 gradient-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">
+                RemoteworkWeb aide les chercheurs d'emploi à découvrir une façon plus intelligente et plus sûre de travailler
+            </h2>
+            <button onclick="d2()" class="bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all hover-scale shadow-lg">
+                Trouvez votre prochain emploi télétravail !
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div class="text-center md:text-left">
+                    <img src="img/title.Cdnq-EC8.webp" alt="RemoteworkWeb Logo" class="h-12 mb-4 mx-auto md:mx-0">
+                    <p class="text-gray-400">Votre source fiable pour le télétravail</p>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-lg font-semibold mb-4">Légal</h4>
+                    <div class="space-y-2">
+                        <a href="privacy.html" class="block text-gray-400 hover:text-white transition-colors">Politique de Confidentialité</a>
+                        <a href="terms.html" class="block text-gray-400 hover:text-white transition-colors">Conditions Générales</a>
+						  <a href="Disclaimer.html" class="block text-gray-400 hover:text-white transition-colors">Conditions Générales</a>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>E-mail : <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c0b3b5b0b0afb2b480b2a5adafb4a5b7afb2abb7a5a2eea3afad">[email&#160;protected]</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Risk Warning Section -->
+            <div class="border-t border-gray-700 pt-8">
+                <div class="bg-red-900 bg-opacity-20 border border-red-700 p-6 rounded-lg mb-6">
+                    <h4 class="text-lg font-semibold mb-4 text-red-400 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                        </svg>
+                        AVERTISSEMENT DE RISQUE IMPORTANT
+                    </h4>
+                    <div class="text-sm text-gray-300 space-y-3">
+                        <p><strong>ATTENTION :</strong> Le travail en ligne comporte des risques significatifs. Méfiez-vous des arnaques et des opportunités qui semblent trop belles pour être vraies.</p>
+                        
+                        <p><strong>Revenus NON Garantis :</strong> Les montants mentionnés (150-200 USD/jour, 1000-1500 USD/semaine) sont des exemples théoriques et NE constituent PAS une promesse de revenus. La plupart des personnes gagnent peu ou rien du tout. Les revenus dépendent entièrement de vos efforts, compétences et facteurs de marché.</p>
+                        
+                        <p><strong>Risques Financiers :</strong> Ne payez JAMAIS de frais d'inscription, d'activation ou d'équipement pour un emploi. Les employeurs légitimes ne demandent pas d'argent.</p>
+                        
+                        <p><strong>Vérification Essentielle :</strong> Recherchez TOUJOURS les employeurs de manière indépendante. Vérifiez leur légitimité avant de partager des informations personnelles ou de commencer à travailler.</p>
+                        
+                        <p><strong>Protection des Données :</strong> Protégez vos informations personnelles et bancaires. Ne les partagez qu'avec des employeurs vérifiés et légitimes.</p>
+                        
+                        <p><strong>Aucune Garantie d'Emploi :</strong> Ce service est informatif uniquement. Nous ne garantissons pas d'emploi, de revenus ou de résultats.</p>
+                        
+                        <p><strong>Votre Responsabilité :</strong> Vous êtes seul responsable de vérifier les opportunités et de prendre des décisions éclairées concernant votre emploi.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <p class="text-gray-400">© 2024 RemoteworkWeb. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Form -->
+    <div id="formModal" class="fixed inset-0 bg-black bg-opacity-50 modal-overlay flex items-center justify-center z-50 hidden">
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-2xl max-w-md w-full mx-4 transform transition-all duration-300">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold text-primary">Postulez maintenant !</h3>
+                <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <form id="applicationForm" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Nom *</label>
+                    <input type="text" id="name" name="name" required 
+                           class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                           placeholder="Votre nom complet">
+                    <span id="nameError" class="text-red-500 text-sm hidden">Le nom est requis</span>
+                </div>
+
+                <div>
+                    <label for="age" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Âge *</label>
+                    <input type="number" id="age" name="age" min="18" max="99" required 
+                           class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                           placeholder="Votre âge">
+                    <span id="ageError" class="text-red-500 text-sm hidden">L'âge doit être entre 18 et 99 ans</span>
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">E-mail *</label>
+                    <input type="email" id="email" name="email" required 
+                           class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                           placeholder="votre.email@exemple.com">
+                    <span id="emailError" class="text-red-500 text-sm hidden">Veuillez entrer une adresse e-mail valide</span>
+                </div>
+
+                <div>
+                    <label for="whatsapp" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Numéro WhatsApp *</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" required 
+                           class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                           placeholder="+33 123 456 789">
+                    <span id="whatsappError" class="text-red-500 text-sm hidden">Le numéro WhatsApp est requis</span>
+                </div>
+
+                <button type="submit" class="w-full bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-6 rounded-lg text-lg transition-all breathing-btn shadow-lg">
+                    Commencer maintenant !
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // FAQ toggle function
+        function toggleFaq(index) {
+            const answer = document.getElementById(`faq-answer-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Modal functions
+        function d2() {
+            document.getElementById('formModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('formModal').classList.add('hidden');
+            clearErrors();
+        }
+
+        function clearErrors() {
+            const errorElements = ['nameError', 'ageError', 'emailError', 'whatsappError'];
+            errorElements.forEach(id => {
+                document.getElementById(id).classList.add('hidden');
+            });
+        }
+
+        // Form validation and submission
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            clearErrors();
+
+            // Validate name
+            const name = document.getElementById('name').value.trim();
+            if (!name) {
+                document.getElementById('nameError').classList.remove('hidden');
+                isValid = false;
+            }
+
+            // Validate age
+            const age = parseInt(document.getElementById('age').value);
+            if (!age || age < 18 || age > 99) {
+                document.getElementById('ageError').classList.remove('hidden');
+                isValid = false;
+            }
+
+            // Validate email
+            const email = document.getElementById('email').value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                document.getElementById('emailError').classList.remove('hidden');
+                isValid = false;
+            }
+
+            // Validate WhatsApp
+            const whatsapp = document.getElementById('whatsapp').value.trim();
+            if (!whatsapp) {
+                document.getElementById('whatsappError').classList.remove('hidden');
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Form is valid, proceed with submission
+                submitForm();
+            }
+        });
+
+        function submitForm() {
+            // Clear form inputs
+            document.getElementById('name').value = '';
+            document.getElementById('age').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('whatsapp').value = '';
+            
+            // Close modal
+            closeModal();
+            
+            // Call K2 method to redirect
+            K2();
+        }
+
+      
+
+        // Close modal when clicking outside
+        document.getElementById('formModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+
+</html>
