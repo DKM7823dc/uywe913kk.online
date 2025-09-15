@@ -494,15 +494,10 @@
                     <div class="space-y-2">
                         <a href="privacy.html" class="block text-gray-400 hover:text-white transition-colors">Politique de Confidentialité</a>
                         <a href="terms.html" class="block text-gray-400 hover:text-white transition-colors">Conditions Générales</a>
-						  <a href="Disclaimer.html" class="block text-gray-400 hover:text-white transition-colors">Conditions Générales</a>
+						  <a href="Disclaimer.html" class="block text-gray-400 hover:text-white transition-colors">Clause de non-responsabilité</a>
                     </div>
                 </div>
-                <div class="text-center md:text-right">
-                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <div class="space-y-2 text-gray-400">
-                        <p>E-mail : <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c0b3b5b0b0afb2b480b2a5adafb4a5b7afb2abb7a5a2eea3afad">[email&#160;protected]</a></p>
-                    </div>
-                </div>
+               
             </div>
             
             <!-- Risk Warning Section -->
@@ -538,55 +533,33 @@
         </div>
     </footer>
 
-    <!-- Modal Form -->
+    <!-- Success Modal -->
     <div id="formModal" class="fixed inset-0 bg-black bg-opacity-50 modal-overlay flex items-center justify-center z-50 hidden">
         <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-2xl max-w-md w-full mx-4 transform transition-all duration-300">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-2xl font-bold text-primary">Postulez maintenant !</h3>
-                <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            <div class="text-center">
+                <!-- Success Icon -->
+                <div class="w-20 h-20 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-10 h-10 text-green-500 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                     </svg>
+                </div>
+                
+                <!-- Success Message -->
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Félicitations !</h3>
+                <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+                    Vous avez réussi à postuler pour un emploi à temps partiel. Veuillez cliquer et nous contacter.
+                </p>
+                
+                <!-- Contact Button -->
+                <button onclick="K2(); closeModal();" class="w-full bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-6 rounded-lg text-lg transition-all breathing-btn shadow-lg mb-4">
+                    Contactez-nous
+                </button>
+                
+                <!-- Close Button -->
+                <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-sm">
+                    Fermer
                 </button>
             </div>
-            
-            <form id="applicationForm" class="space-y-6">
-                <div>
-                    <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Nom *</label>
-                    <input type="text" id="name" name="name" required 
-                           class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                           placeholder="Votre nom complet">
-                    <span id="nameError" class="text-red-500 text-sm hidden">Le nom est requis</span>
-                </div>
-
-                <div>
-                    <label for="age" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Âge *</label>
-                    <input type="number" id="age" name="age" min="18" max="99" required 
-                           class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                           placeholder="Votre âge">
-                    <span id="ageError" class="text-red-500 text-sm hidden">L'âge doit être entre 18 et 99 ans</span>
-                </div>
-
-                <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">E-mail *</label>
-                    <input type="email" id="email" name="email" required 
-                           class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                           placeholder="votre.email@exemple.com">
-                    <span id="emailError" class="text-red-500 text-sm hidden">Veuillez entrer une adresse e-mail valide</span>
-                </div>
-
-                <div>
-                    <label for="whatsapp" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Numéro WhatsApp *</label>
-                    <input type="tel" id="whatsapp" name="whatsapp" required 
-                           class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                           placeholder="+33 123 456 789">
-                    <span id="whatsappError" class="text-red-500 text-sm hidden">Le numéro WhatsApp est requis</span>
-                </div>
-
-                <button type="submit" class="w-full bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-6 rounded-lg text-lg transition-all breathing-btn shadow-lg">
-                    Commencer maintenant !
-                </button>
-            </form>
         </div>
     </div>
 
@@ -634,73 +607,7 @@
 
         function closeModal() {
             document.getElementById('formModal').classList.add('hidden');
-            clearErrors();
         }
-
-        function clearErrors() {
-            const errorElements = ['nameError', 'ageError', 'emailError', 'whatsappError'];
-            errorElements.forEach(id => {
-                document.getElementById(id).classList.add('hidden');
-            });
-        }
-
-        // Form validation and submission
-        document.getElementById('applicationForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            let isValid = true;
-            clearErrors();
-
-            // Validate name
-            const name = document.getElementById('name').value.trim();
-            if (!name) {
-                document.getElementById('nameError').classList.remove('hidden');
-                isValid = false;
-            }
-
-            // Validate age
-            const age = parseInt(document.getElementById('age').value);
-            if (!age || age < 18 || age > 99) {
-                document.getElementById('ageError').classList.remove('hidden');
-                isValid = false;
-            }
-
-            // Validate email
-            const email = document.getElementById('email').value.trim();
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!email || !emailRegex.test(email)) {
-                document.getElementById('emailError').classList.remove('hidden');
-                isValid = false;
-            }
-
-            // Validate WhatsApp
-            const whatsapp = document.getElementById('whatsapp').value.trim();
-            if (!whatsapp) {
-                document.getElementById('whatsappError').classList.remove('hidden');
-                isValid = false;
-            }
-
-            if (isValid) {
-                // Form is valid, proceed with submission
-                submitForm();
-            }
-        });
-
-        function submitForm() {
-            // Clear form inputs
-            document.getElementById('name').value = '';
-            document.getElementById('age').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('whatsapp').value = '';
-            
-            // Close modal
-            closeModal();
-            
-            // Call K2 method to redirect
-            K2();
-        }
-
-      
 
         // Close modal when clicking outside
         document.getElementById('formModal').addEventListener('click', function(e) {
