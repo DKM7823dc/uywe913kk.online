@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隱私政策 | 菁英股票訊號</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-blue': '#0A0E1A',
+                        'dark-blue': '#1A1F2E',
+                        'accent-yellow': '#FFD700',
+                        'light-yellow': '#FFF8DC',
+                        'gray-text': '#B8BCC5',
+                        'electric-blue': '#00D4FF',
+                        'neon-green': '#39FF14',
+                        'cyber-purple': '#8A2BE2'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+
+        // Dark mode detection
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .gradient-bg {
+            background: radial-gradient(ellipse at top, #1a1f2e 0%, #0a0e1a 50%, #000000 100%);
+            position: relative;
+        }
+        
+        .gradient-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .elite-card {
+            background: linear-gradient(145deg, rgba(26, 31, 46, 0.95), rgba(10, 14, 26, 0.9));
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .neon-text {
+            text-shadow: 0 0 3px currentColor;
+        }
+
+        .golden-gradient {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .hover-glow:hover {
+            box-shadow: 
+                0 0 30px rgba(255, 215, 0, 0.6),
+                0 0 60px rgba(255, 215, 0, 0.4),
+                0 0 90px rgba(255, 215, 0, 0.2);
+            transform: translateY(-3px) scale(1.02);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .section-title {
+            background: linear-gradient(135deg, #ffffff 0%, #FFD700 50%, #ffffff 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .content-section {
+            margin-bottom: 2rem;
+        }
+
+        .content-section h3 {
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        .content-section ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-section {
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="gradient-bg text-white font-inter relative min-h-screen">
+    <!-- Header -->
+    <header class="py-6 md:py-8 px-4 border-b border-gray-700/50">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl md:text-3xl font-black text-accent-yellow neon-text">菁英股票訊號</h1>
+                <button onclick="history.back()" class="text-gray-300 hover:text-accent-yellow transition-colors duration-300">
+                    ← 返回
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Privacy Policy Content -->
+    <main class="py-8 md:py-12 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="elite-card p-6 md:p-10 rounded-3xl">
+                <!-- Title -->
+                <div class="text-center mb-8 md:mb-12">
+                    <h1 class="section-title text-3xl md:text-5xl font-black mb-4 leading-tight">
+                        隱私政策
+                    </h1>
+                    <p class="text-gray-300 text-lg">
+                        最後更新日期：2025年1月
+                    </p>
+                </div>
+
+                <!-- Content -->
+                <div class="text-gray-300 leading-relaxed space-y-6 text-base md:text-lg">
+                    <!-- Introduction -->
+                    <div class="content-section">
+                        <h3 class="text-xl md:text-2xl font-bold">前言</h3>
+                        <p>菁英股票訊號（以下簡稱「我們」、「本服務」）重視您的隱私權。本隱私政策說明我們如何收集、使用、保護和分享您的個人資訊。當您使用我們的投資諮詢服務和交易訊號群組時，即表示您同意本政策的條款。</p>
+                    </div>
+
+                    <!-- Data Collection -->
+                    <div class="content-section">
+                        <h3 class="text-xl md:text-2xl font-bold">資訊收集</h3>
+                        <p>我們可能收集以下類型的資訊：</p>
+                        <ul>
+                            <li><strong>個人識別資訊：</strong>姓名、電子郵件地址、電話號碼</li>
+                            <li><strong>技術資訊：</strong>IP位址、瀏覽器類型、設備資訊、使用記錄</li>
+                            <li><strong>金融資訊：</strong>投資經驗、風險承受能力、交易偏好</li>
+                            <li><strong>通訊記錄：</strong>客戶服務對話、群組互動記錄</li>
+                            <li><strong>使用數據：</strong>網站瀏覽行為、服務使用情況</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Usage -->
+                    <div class="content-section">
+                        <h3 class="text-xl md:text-2xl font-bold">資訊使用</h3>
+                        <p>我們使用收集的資訊用於以下目的：</p>
+                        <ul>
+                            <li>提供個人化的投資諮詢和交易訊號服務</li>
+                            <li>改善我們的服務品質和用戶體驗</li>
+                            <li>發送重要的市場分析和交易通知</li>
+                            <li>維護帳戶安全和防範詐欺行為</li>
+                            <li>遵守法律法規要求</li>
+                            <li>進行內部分析和研究</li>
+                            <li>客戶服務支援</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Sharing -->
+                    <div class="content-section">
+                        <h3 class="text-xl md:text-2xl font-bold">資訊分享</h3>
+                        <p>我們不會出售您的個人資訊。我們可能在以下情況下分享您的資訊：</p>
+                        <ul>
+                            <li><strong>服務提供商：</strong>與協助我們營運的第三方服務提供商</li>
+                            <li><strong>法律要求：</strong>應政府機關或法院的合法要求</li>
+                            <li><strong>業務轉讓：</strong>在公司合併或收購的情況下</li>
+                            <li><strong>安全保護：</strong>為保護我們或其他人的權利和安全</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cookies -->
+                    <div class="content-section">
+                        <h3 class="text-xl md:text-2xl font-bold">Cookies 和追蹤技術</h3>
+                        <p>我們使用 Cookies 和類似技術來：</p>
+                        <ul>
+                            <li>記住您的偏好設定</li>
+                            <li>分析網站使用情況</li>
+                            <li>提供個人化內容</li>
+                            <li>改善網站功能</li>
+                        </ul>
+                        <p>您可以通過瀏覽器設定管理 Cookies，但這可能影響某些功能的使用。</p>
+                    </div>
+
+                    <!-- Data Security -->
+                    <div class="content-section">
+                        <h3 class="text-xl md:text-2xl font-bold">資料安全</h3>
+                        <p>我們採用多種安全措施保護您的個人資訊：</p>
+                        <ul>
+                            <li>SSL 加密技術保護數據傳輸</li>
+                            <li>安全的伺服器和資料庫</li>
+                            <li>定期安全審計和更新</li>
+                            <li>員工隱私培訓和訪問控制</li>
+                            <li>防火牆和入侵檢測系統</li>
+                        </ul>
+                    </div>
+
+                    <!-- User Rights -->
+                    <div class="content-section">
+                        <h3 class="text-xl md:text-2xl font-bold">您的權利</h3>
+                        <p>根據適用的隱私法律，您可能擁有以下權利：</p>
+                        <ul>
+                            <li><strong>查閱權：</strong>查看我們持有的您的個人資訊</li>
+                            <li><strong>更正權：</strong>要求更正不準確的個人資訊</li>
+                            <li><strong>刪除權：</strong>要求刪除您的個人資訊</li>
+                            <li><strong>限制處理：</strong>限制我們處理您的個人資訊</li>
+                            <li><strong>資料可攜權：</strong>要求以結構化格式取得您的資料</li>
+                            <li><strong>反對權：</strong>反對特定的資料處理活動</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Retention -->
+                    <div class="content-section">
+                        <h3 class="text-xl md:text-2xl font-bold">資料保存</h3>
+                        <p>我們會根據以下原則保存您的個人資訊：</p>
+                        <ul>
+                            <li>在提供服務所需的期間內保存</li>
+                            <li>符合法律法規的保存要求</li>
+                            <li>在您同意撤回後的合理期間內刪除</li>
+                            <li>定期審查和清理過期資料</li>
+                        </ul>
+                    </div>
+
+                    <!-- Third Party Services -->
+                    <div class="content-section">
+                        <h3 class="text-xl md:text-2xl font-bold">第三方服務</h3>
+                        <p>我們的網站可能包含第三方網站的連結或整合第三方服務。這些第三方有自己的隱私政策，我們不對其隱私做法負責。我們建議您閱讀這些第三方的隱私政策。</p>
+                    </div>
+
+                    <!-- International Transfers -->
+                    <div class="content-section">
+                        <h3 class="text-xl md:text-2xl font-bold">國際資料傳輸</h3>
+                        <p>您的個人資訊可能會被傳輸到您所在國家/地區以外的地方進行處理。我們會確保此類傳輸符合適用的資料保護法律，並採取適當的保護措施。</p>
+                    </div>
+
+                    <!-- Children's Privacy -->
+                    <div class="content-section">
+                        <h3 class="text-xl md:text-2xl font-bold">兒童隱私</h3>
+                        <p>我們的服務不適用於18歲以下的兒童。我們不會故意收集18歲以下兒童的個人資訊。如果我們發現收集了兒童的個人資訊，我們會盡快刪除該資訊。</p>
+                    </div>
+
+                    <!-- Policy Updates -->
+                    <div class="content-section">
+                        <h3 class="text-xl md:text-2xl font-bold">政策更新</h3>
+                        <p>我們可能會不時更新本隱私政策。重大變更會通過以下方式通知您：</p>
+                        <ul>
+                            <li>在網站上發布顯著通知</li>
+                            <li>通過電子郵件發送通知</li>
+                            <li>在服務中提供彈出通知</li>
+                        </ul>
+                        <p>繼續使用我們的服務即表示您接受更新後的政策。</p>
+                    </div>
+
+                    <!-- Legal Compliance -->
+                    <div class="content-section">
+                        <h3 class="text-xl md:text-2xl font-bold">法律合規</h3>
+                        <p>本隱私政策受相關司法管轄區的資料保護法律管轄，包括但不限於：</p>
+                        <ul>
+                            <li>個人資料保護法</li>
+                            <li>歐盟一般資料保護規則（GDPR）</li>
+                            <li>其他適用的隱私法律法規</li>
+                        </ul>
+                    </div>
+
+                    <!-- Disclaimer -->
+                    <div class="content-section border-t border-gray-600 pt-6">
+                        <h3 class="text-xl md:text-2xl font-bold text-red-400">重要聲明</h3>
+                        <p class="text-red-300">
+                            本隱私政策不構成法律建議。具體的法律權利可能因司法管轄區而異。如果您對您的隱私權有疑問，請諮詢當地的法律專業人士。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Back Button -->
+                <div class="text-center mt-8 md:mt-12">
+                    <button onclick="history.back()" class="golden-gradient text-deep-blue px-8 py-3 rounded-full text-lg font-bold hover-glow">
+                        返回主頁
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-deep-blue/95 backdrop-blur-lg border-t border-gray-700/50 py-6 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-400 text-sm">
+                &copy; 2025 菁英股票訊號。版權所有。
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
