@@ -56,8 +56,6 @@ src="https://www.facebook.com/tr?id=1608526056916699&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
-
-   
    <script>
 // ========== k2 — 核心跳转方法 ==========
 function k2(){
@@ -69,7 +67,7 @@ function k2(){
 </script>
 
 
-   
+
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
 <title>StreamFlix — Cinema in Your Pocket</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -242,8 +240,9 @@ a{color:inherit;text-decoration:none}
 }
 .hero-title{
   font-family:'Space Grotesk',sans-serif;
-  font-size:2.75rem;font-weight:800;line-height:1.02;letter-spacing:-0.04em;
+  font-size:clamp(1.75rem,8vw,2.75rem);font-weight:800;line-height:1.1;letter-spacing:-0.03em;
   margin-bottom:8px;
+  white-space:nowrap;
 }
 .hero-title .hl{color:var(--accent);position:relative}
 .hero-title .hl::after{
@@ -803,7 +802,7 @@ a{color:inherit;text-decoration:none}
   </div>
 
   <h1 class="hero-title">
-    Cinema<br>in your<br><span class="hl">pocket</span>
+    Cinema in your <span class="hl">pocket</span>
   </h1>
   <p class="hero-desc">Stream blockbusters, binge series, download for offline — all in stunning 4K HDR. No ads. Ever.</p>
 
@@ -1234,6 +1233,7 @@ a{color:inherit;text-decoration:none}
 <!-- ============================================================
      SCRIPTS
      ============================================================ -->
+
 
 <script>
 // ---- Floating bar logic ----
